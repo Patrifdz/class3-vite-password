@@ -1,6 +1,6 @@
 import type { Security} from './password.model'
 
-export function levelPassword (level : Security) : RegExp  {
+export function levelPassword (level : Security) : RegExp  | string | undefined {
     if (level === "low") {
         return  /^[a-z0-9]{6,10}$/;
     } else if (level === "medium") {
