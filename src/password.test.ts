@@ -1,16 +1,13 @@
 import { expect, test, describe } from "vitest";
-import { getPassword } from './password'
+import { getValidPassword } from './password'
 
-describe("Testing function getPassword", () => {
-  test("Testing easy level password generate by the function 'getPassword' ", () => {
+describe("Testing function 'getValidPassword' ", () => {
+  test("Testing easy level password generate by the function 'getValidPassword' ", () => {
     // Arrange -> Definir los datos que usaremos para la prueba
     const  levelPassword = "low";
-
     // Act -> Ejecutas la acción que quieres probar, por ejemplo, ejecutas la función
-    const result =getPassword(levelPassword);
-
+    const result =getValidPassword(levelPassword);
     // Assert -> Compruebas que el resultado es el esperado
-
-    expect(result).toBe("HmJ10");
+    expect(result).toBe("abc123");
   });
 });
