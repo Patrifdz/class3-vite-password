@@ -3,7 +3,8 @@
 export interface Level  {
     regExp : RegExp,
     max: number,
-    min: number
+    min: number,
+    characters: string
 }
 
 export interface Password {
